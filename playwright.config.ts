@@ -8,7 +8,6 @@ export default defineConfig({
 
   use: {
     baseURL: process.env.BASE_URL ?? 'https://www.saucedemo.com',
-    // O Sauce Demo usa o atributo data-test nos elementos -> getByTestId('...')
     testIdAttribute: 'data-test',
     screenshot: 'only-on-failure',
     trace: 'retain-on-failure',
