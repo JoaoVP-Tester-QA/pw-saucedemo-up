@@ -1,5 +1,7 @@
 # Sauce Demo — Testes E2E com Playwright
 
+[![Playwright Tests](https://github.com/JoaoVP-Tester-QA/pw-saucedemo-up/actions/workflows/playwright.yml/badge.svg)](https://github.com/JoaoVP-Tester-QA/pw-saucedemo-up/actions/workflows/playwright.yml)
+
 Automação do fluxo de compra do [Sauce Demo](https://www.saucedemo.com) usando **Playwright + TypeScript**.
 
 ## Como rodar
