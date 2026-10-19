@@ -3,23 +3,15 @@
   "version": "1.0.0",
   "description": "Testes E2E do fluxo de compra do Sauce Demo com Playwright + TypeScript",
   "private": true,
-  "license": "MIT",
-  "engines": {
-    "node": ">=20"
-  },
   "scripts": {
-    "test": "playwright test --project=chromium",
-    "test:smoke": "playwright test --project=chromium --grep @smoke",
-    "test:headed": "playwright test --headed --project=chromium",
+    "postinstall": "playwright install chromium",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
-    "test:all-browsers": "playwright test --project=chromium --project=firefox --project=webkit",
-    "test:stability": "playwright test --repeat-each=5 --project=chromium",
-    "report": "playwright show-report",
-    "typecheck": "tsc --noEmit"
+    "report": "playwright show-report"
   },
   "devDependencies": {
     "@playwright/test": "1.56.0",
-    "@types/node": "^22.0.0",
-    "typescript": "^6.0.3"
+    "@types/node": "^22.0.0"
   }
 }
